@@ -1,7 +1,6 @@
 {
   "name": "new_c",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +9,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "node-sass": "^8.0.0",
+    "scss": "^0.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osnatkulyok/calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/osnatkulyok/calculator/issues"
+  },
+  "homepage": "https://github.com/osnatkulyok/calculator#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.56.1"
   }
 }
