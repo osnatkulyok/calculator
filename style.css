@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
   body {
     padding: 1rem 3rem;
   }
@@ -10,12 +10,16 @@
     font-weight: normal;
 }
 body{
-    background: linear-gradient(to right,aqua, rgb(255, 77, 0));
+    background-color: rgb(147, 157, 157);
 }
  /*why does it dont let me to change the size of the body & icons???*/
 .calculator-grid{
     display: grid;
-    position: absolute;
+    position: inherit;
+    height: 85vh;
+    width: 70vh;
+    margin: 50px 450px; 
+    place-content: center;
     grid-template-columns: 1.5fr repeat(3, 2fr) 1.5fr;
     grid-template-rows: repeat(7, 1.5fr);
     grid-gap:0;
@@ -23,7 +27,7 @@ body{
                         "info title title title setting"
                         "light result result result back"
                         "timer clear clear clear divide"
-                        "power seven eight nine dubble"
+                        "powDown seven eight nine dubble"
                         "uploud four five six minus"
                         "empty one two three plus"
                         "empty_2 plusMinus zero point equal";
@@ -35,12 +39,17 @@ body{
   border: 2px solid white;
   outline: none;
 }
+/*images*/
+.img {
+    width: 25px;
+    height: 25px;
+}
 .operation{
-    background-color: rgba(230, 230, 230, 0.9);
+    background-color: rgba(200, 200, 200, 0.9);
 
 }
 .num{
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(247, 247, 247, .75);
 }
 .calculator-grid > button:hover {
   background-color: rgba(255, 255, 255, .9);
@@ -59,16 +68,19 @@ body{
 }
 .result{
     grid-area: result;
-    background-color: rgb(200, 200, 180);
+    /* background-color: ; */
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
     padding: 10px;
+    background-color: rgb(147, 157, 157);
+    
+    /*align-items: center;*/
     /*word-wrap: break-word;*/
     /*word-break: break-all;*/
 }
-.previous-operand {
+/* .previous-operand {
   color: rgba(255, 255, 255, .75);
   font-size: 1.5rem;
 }
@@ -76,7 +88,7 @@ body{
 .current-operand {
   color: white;
   font-size: 2.5rem;
-}
+} */
 .back{
     grid-area: back;
 }
@@ -89,8 +101,8 @@ body{
 .divide{
     grid-area: divide;
 }
-.power{
-    grid-area: power;
+.powDown{
+    grid-area: powDown;
 }
 .seven{
     grid-area: seven;
@@ -123,7 +135,7 @@ body{
 .empty{
     grid-area: empty;
 }
-.dark-mood {
+.dark {
     background: linear-gradient(to right, rgba(64, 24, 68, 0.74), rgba(67, 20, 72, 0.74));
 }
 .one{
@@ -152,4 +164,12 @@ body{
 }
 .equal{
     grid-area: equal;
+}
+
+/*Dark Mood*/
+.op_mood{
+    background-color: gray;
+}
+.num_mood{
+    background-color: rgb(230, 230, 22);
 }
