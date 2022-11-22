@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<form>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <div class="information">
+
+        <h3>Hey my name is Osnat Kulyok</h3>
+        <h4>Here is some information about the calculator you're using</h4>
+
+        <p>version: H504g2 y; 2005</p>
+        <p> Purpose:
+            Beyond your need for basic account operations,
+            it's important to us to give you the ultimate user experience.
+
+            Below you'll be able to see technical specifications and an explanation
+            of additional features designed to improve your user experience and give
+            you additional tools to refine your goals</p>
+        <p>Information: Information page, actual your current page &#128520;</p>
+        <p>Setting: Gives you access to edit settings </p>
+        <p>Lamp: Give you a clue in case you fill stack</p>
+        <p>Arrow: Let you see your last result</p>
+        <p>Back arrow: A step back</p>
+        <p>Power of: Increase the number in the power of..</p>
+        <p>Cloud: Uploud the file to your Drive account</p>
+        <p>Light: Control your mood-light screen</p>
+        <p>&#127770;: Turn off the calculator in 10 sec.</p>
+
+    </div>
+
+    <section>
+        <h2>Feedback Form</h2>
+        <h3>I'd love to hear your honest thoughts</h3>
+    </section>
+
+    <section>
+        <div>
+            <h2>Personal Details</h2>
+            <label>Full name: <input type="text" id="name" name="name"></label>
+            <label>Email: <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"></label>
+            <label>Phone number: <input type="tel" id="phone" name="phone" placeholder="123-4567-890" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"></label>
+            <label>Date of birth: <input type="date"  id="date" name="date"></label>
+        </div>
+    </section>
+
+     <section>
+        <div>
+            <h2>Your Feadback</h2>
+            <h5>Rating:</h5>
+            <input type="radio" id="1" name="rating"><br>
+            <label for="1">1</label>
+            <input type="radio" id="2" name="rating"><br>
+            <label for="2">2</label>
+            <input type="radio" id="3" name="rating"><br>
+            <label for="3">3</label>
+            <input type="radio" id="4" name="rating"><br>
+            <label for="4">4</label>
+            <input type="radio" id="5" name="rating"><br>
+            <label for="5">5</label>
+
+            <label for="message">Let me know what better to be improved:</label>
+            <input type="text" id="message" name="message">
+        </div>
+    </section>
+
+    <button type="submit" id="submit" formaction="#">
+        submit
+    </button>
+    <button type="reset" id="reset" formaction="#">
+        reset
+    </button>
+
+</form>
+</html>
