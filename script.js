@@ -3,11 +3,11 @@
 const allButtons = document.querySelectorAll('button');
 
 //anyway --> check the 'or' thing
-// for (const btn of allButtons) {
-//     btn.addEventListener('click', () => {
-//         alert(btn.getAttribute('value'));
-//     });
-// }
+for (const btn of allButtons) {
+    btn.addEventListener('click', () => {
+        alert(btn.getAttribute('value'));
+    });
+}
 
 
 //Print --> improve by invalidation
@@ -16,7 +16,7 @@ const drowOnBoard = document.querySelectorAll('.draw')
 //Result area
 const resultBoard = document.querySelector('.result')
 //defind a string in order to change the result's text
-var list = ""
+var list =""
 
 const board = document.querySelectorAll('.draw');
     for (const num of board) {
@@ -36,7 +36,6 @@ clearButton.addEventListener("click", () =>{
 
 
 //Delete list[-1]
-//check one num case 
 const deleteButton = document.querySelector('#delete')
 deleteButton.addEventListener("click", () =>{
     list = list.slice(0,-1);
@@ -44,16 +43,33 @@ deleteButton.addEventListener("click", () =>{
 })
 
 
-//Dark Mood
+// //Dark Mood
+//TO DO --> Check this as soon as possible   
 const darkButton = document.querySelector('#dark_mood')
 
 darkButton.addEventListener("click", () =>{
-    var element = document.getElementsByClassName('.op_mood')
-    element.classList.toggle("op_mood");
+    const nums = document.querySelectorAll('.num_mood');
+    nums.className = ".num_mood";
 })
 
+//Info
+const infoButton = document.querySelector('.info');
 
+const text = "Developer name: OSNAT KULYOK\nVersion: EH2022\n\nThis is trying to be a sciense calculator\n and try to develope sophisticated buttons\nin order to give u the most pleasure experience.";
+infoButton.addEventListener("click", () =>{
+    alert(text);
+})
 
+//S RESULT 
+// const equalButton = document.querySelector('#equal');
+
+// equalButton.addEventListener("click", () =>{
+//     let result = document.getElementById('#result');
+//     let num = +result;
+    
+//     //TO DO --> AS PROMISE
+//     document.getElementById("result").textContent = ;
+// })
 
 
 

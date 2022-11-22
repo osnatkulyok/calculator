@@ -4,6 +4,7 @@
   }
 }
 
+/*set body settings*/
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: sans-serif;
@@ -12,7 +13,7 @@
 body{
     background-color: rgb(147, 157, 157);
 }
- /*why does it dont let me to change the size of the body & icons???*/
+
 .calculator-grid{
     display: grid;
     position: inherit;
@@ -39,11 +40,22 @@ body{
   border: 2px solid white;
   outline: none;
 }
+
 /*images*/
 .img {
     width: 25px;
     height: 25px;
 }
+
+/*Dark Mood*/
+.op_mood{
+    background-color: gray;
+}
+.num_mood{
+    background-color: rgb(230, 230, 22);
+}
+
+/*Light Mood*/
 .operation{
     background-color: rgba(200, 200, 200, 0.9);
 
@@ -51,9 +63,13 @@ body{
 .num{
     background-color: rgba(247, 247, 247, .75);
 }
+
+/*hover thing*/
 .calculator-grid > button:hover {
   background-color: rgba(255, 255, 255, .9);
 }
+
+/*Definde grid-area*/
 .info{
     grid-area: info;
 }
@@ -166,10 +182,3 @@ body{
     grid-area: equal;
 }
 
-/*Dark Mood*/
-.op_mood{
-    background-color: gray;
-}
-.num_mood{
-    background-color: rgb(230, 230, 22);
-}
