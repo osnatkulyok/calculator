@@ -1,0 +1,87 @@
+@media (min-width: 444px) {
+  .expandToRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 991.98px) {
+  .mobileColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .body {
+    background-color: rgb(109, 146, 154);
+  }
+}
+.header {
+  background-color: aqua;
+  grid-area: header;
+  /*position: sticky;*/
+  font-weight: 100;
+  width: 100%;
+  top: 0;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.header > h1 {
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 15px 30px;
+}
+
+.guest-board {
+  display: grid;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-left: 500px;
+  width: 250px;
+  height: 400px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, 2fr);
+  grid-template-rows: repeat(6, 1.5fr);
+  grid-template-areas: "po po po po po" "po po po po po" "po po po po po" "po po po po po" "po po po po po" "po po po po po";
+}
+
+.guest-board > button {
+  background-color: rgb(243, 230, 241);
+}
+
+/*hover thing*/
+.guest-board > button:hover {
+  background-color: rgba(206, 230, 237, 0.9);
+  border-radius: 10px;
+}
+
+.keyword-board {
+  display: grid;
+  justify-content: space-around;
+  margin: 25px;
+  display: grid;
+  justify-content: space-around;
+  margin-left: 350px;
+  width: 500px;
+  height: 120px;
+  grid-gap: 5px;
+  filter: drop-shadow(5px 5px 5px #222);
+  grid-template-columns: repeat(9, 2fr);
+  grid-template-rows: repeat(3, 2fr);
+  grid-template-areas: "po po po po po po po po po po" "po po po po po po po po po" "po po po po po po po po po po ";
+}
+
+.keyword-board > button {
+  background-color: rgb(157, 241, 241);
+  border-radius: 10px;
+}
+
+/*hover thing*/
+.keyword-board > button:hover {
+  background-color: rgb(97, 225, 225);
+}/*# sourceMappingURL=wordle.css.map */
