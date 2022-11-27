@@ -3,11 +3,11 @@
 const allButtons = document.querySelectorAll('button');
 
 //anyway --> check the 'or' thing
-// for (const btn of allButtons) {
-//     btn.addEventListener('click', () => {
-//         alert(btn.getAttribute('value'));
-//     });
-// }
+for (const btn of allButtons) {
+    btn.addEventListener('click', () => {
+        alert(btn.getAttribute('value'));
+    });
+}
 
 
 //Print --> improve by invalidation
